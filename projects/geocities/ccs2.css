@@ -1,0 +1,198 @@
+  @font-face {
+  font-family: 'Comic Sans MS';
+}
+
+body {
+  background: url(https://images.kerrangcdn.com/images/KERRANG_HEAVYMETAL_ARTISTS_v2.jpg?auto=compress&fit=max&w=1200);
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Comic Sans MS';
+
+  }
+  
+  a {
+    color: red
+    }
+    
+  small {
+    font-size:10pt;
+    }
+    
+  .box {
+    border: 3px solid #2e1b36;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 22px;
+    background-color:#870c25;
+    
+    }
+    
+    h1 {
+	 
+    text-align:center;
+    border: 6px solid black;
+    margin-left: 22%;
+    margin-right: 22%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20px;
+    background-color:red;
+      }
+      
+    h2 {
+    text-align: center;
+    border: 3px solid #2e456d;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color:#406098;
+      }
+      
+    h3 {
+    text-align: center;
+    border: 3px solid #3d2f5b;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color:#5a4586;
+      }
+      
+
+      
+    h4 {
+      text-align: center;
+      }
+      
+    h5 {
+      text-align: center;
+      }
+      
+    center {
+      text-align: center;
+      }
+
+
+.text-centre{
+  text-align:center;
+}
+
+.body-wrapper {
+    max-width: 1500px;
+    margin: 10;
+}
+
+.center {
+  text-align: center;
+  border: 3px black;
+  margin: 0 auto;   
+  max-width: 2000px; 
+  width: 65%;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+{
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 8px;
+}
+article p, article h1,article h2, article h3, article h4{
+  padding:0 15px;
+}
+article{
+  margin: 5px;
+  padding: 5px 0;
+  border: 3px solid #2e1b36;
+  overflow: hidden;
+  padding-top: 0px;
+  background:#870c25;
+}
+
+main{
+  float:left;
+  max-width: 68%;
+}
+aside{
+  float:right;
+	max-width: 32%;
+}
+section{
+  float: right;
+	max-width: 32%;
+}
+footer{
+	width: auto;
+	float: none;
+}
+.Links { grid-area: Links;
+border: 5px solid pink;
+height: 800px;
+width:auto;
+overflow:auto;
+}
+
+.MoreLinks { grid-area: Links;
+border: 5px solid pink;
+height: 300px;
+width:auto;
+overflow:auto;
+}
+
+.bottom
+{
+height: auto;
+width: auto;
+}
