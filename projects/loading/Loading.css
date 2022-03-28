@@ -1,0 +1,51 @@
+.container {
+  align-items:center;
+  display:flex;
+  justify-content:center;
+  height:100vh;
+  width:100%;
+}
+
+.loader-outer {
+  background:#f5f5f5;
+  border-radius:10rem;
+  display:block;
+  height:10px;
+  overflow:hidden;
+  position:relative;
+  width:400px;
+}
+
+.loader-inner {
+  animation-duration:4.5s;
+  animation-name:loader-waiting;
+  animation-iteration-count:infinite;
+  animation-timing-function:cubic-bezier(0.65, 0, 0.35, 1);
+  background:linear-gradient(90deg, #FFA300 0%, #FC4C02 50%, #FF8672 100%);
+  border-radius:10em;
+  height:100%;
+  position:absolute;
+  width:100%;
+}
+
+@keyframes loader-waiting {
+  0% {
+    left:-90%;
+  }
+  25% {
+    left:0%;
+  }
+  50% {
+    left:90%;
+  }
+  75% {
+    left:0%;
+  }
+  100% {
+    left:-90%;
+  }
+}
+.text {
+	align-content: center
+	
+}
