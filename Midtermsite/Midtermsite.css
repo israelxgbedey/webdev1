@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 650px;
+  height: 100vh;
+}
+
+.flower_box{
+  width: 760px;
+  height: 1070px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.image{
+  float: left;
+  width: 50%;
+  height: 100%;
+  display:block;
+  background: url("https://cdn.theatlantic.com/thumbor/LpxIgUAofQOoHmflMopWCC3VeNs=/0x12:2090x1188/976x549/media/img/2017/09/DIS_Biz_Useem/original.jpg") -85px center;
+  background-size: cover;
+  border-radius: 8px 0 0 8px;
+}
+
+.right{
+  padding: 55px 40px;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+h1{
+  color: rgba(0,0,0,0.7);
+  font: normal 300 34px/30px 'Cinzel', serif;
+  text-align: left;
+}
+
+h5{
+  text-transform: uppercase;
+  font: normal 500 14px/30px 'Cinzel', serif;
+  color: rgba(71,71,71,0.7);
+  text-align: left;
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+
+
+p{
+  text-align: left;
+  color: rgba(71,71,71,0.8);
+  font: 500 16px/26px  'Lato', sans-serif;
+  margin-top: 20px;
+}
+
+span{
+  margin-top: 30px;
+  float: left;
+  font: normal 500 28px/26px  'Lato', sans-serif;
+  color: rgba(71,71,71,1);
+}
+
+button{
+  float: right;
+  margin-top: 20px;
+  width: 175px;
+  height: 50px;
+  border-radius: 40px;
+  outline: 0;
+  border: 0;
+  background-color: rgba(125, 231, 202,1);
+  color: black;
+  font: normal 500 13px/30px  'Lato', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgba(92, 200, 170,1);
+  transition: 0.5s ease-out;
+}
