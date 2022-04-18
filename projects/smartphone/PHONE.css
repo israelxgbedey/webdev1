@@ -1,0 +1,79 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+.phone {
+  width: 374px;
+  height: 767px;
+  margin: 0 auto;
+  background: url(https://w7.pngwing.com/pngs/642/509/png-transparent-black-android-smartphone-illustration-iphone-4s-iphone-6s-iphone-7-iphone-5s-phone-angle-rectangle-phone-icon-thumbnail.png) no-repeat;
+  position: relative;
+  padding-top: 96px;
+	
+}
+
+.screen {
+  background: url(https://cdn.pixabay.com/photo/2020/03/08/21/41/boat-4913841_960_720.jpg) no-repeat;
+  background-size: cover;
+  width: 345px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-left: 6px;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  z-index: 1;
+	
+	
+}
+
+.scroll-area {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-gap: 1rem;
+  scroll-snap-align: start;
+  min-width: 228px;
+  height: 404px;
+  justify-items: center;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+.blurfooter {
+  position: absolute;
+  bottom: 206px;
+  left: 52px;
+  right: 63px;
+  height: 40px;
+  padding: 1rem;
+  opacity: 0.3;
+  background: #52aff9;
+}
+
+.footer {
+  position: absolute;
+  bottom: 206px;
+  left: 0;
+  right: 0;
+  height: 40px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+}
+.footer img {
+  margin: 0 0.5rem;
+}
