@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+	background-color: #fcf6df;
+}
+
+a {
+  color: black;
+}
+
+.mypage {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* header */
+
+.header {
+  background-color: #fcf6df;
+  z-index: 3;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #fcf6df;
+}
+
+.logo {
+  font-family: "Sacramento", cursive;
+  font-size: 2em;
+  float: left;
+  text-decoration: none;
+  padding-top: 10px;
+}
+a:hover {
+  color: #7e38d5;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.mycontent img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.contact p {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.contact .socialmedia {
+  display: flex;
+  justify-content: center;
+}
+.contact .socialmedia svg {
+  margin: 5px 5px;
+}
+footer {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 80px;
+}
+
+@media (min-width: 700px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  .header li {
+    float: left;
+  }
+  .header li a {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .menu {
+    clear: none;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header .logo {
+    font-size: 3em;
+  }
+  .header li a:hover,
+.header .menu-btn:hover {
+  background-color:white;
+  text-decoration: underline wavy purple;
+}
+  .mycontent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+  .mycontent a {
+    width: 49%;
+  }
+  .mycontent a:hover {
+    opacity: 80%;
+  }
+  .contact p {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .contact .socialmedia svg {
+    margin: 5px 5px;
+    width: 45px;
+    height: 45px;
+    viewbox: 0 0 45 45;
+  }
+  footer {
+    font-size: 20px;
+    font-weight: 300;
+    padding-top: 100px;
+  }
+}
+
+
+
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+}
+
+.lorem-ipsum {
+  width: 100%;
+  max-width: 500px;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.annotation {
+  display: inline-flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  position: relative;
+  overflow: hidden;
+}
+.annotation:hover {
+  overflow: visible;
+  cursor: pointer;
+}
+.annotation:hover .annotation-text {
+  opacity: 1;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.annotation-text {
+  background-color: #e74c3c;
+  color: #ffffff;
+  padding: 5px 10px;
+  position: absolute;
+  top: -2.25em;
+  white-space: nowrap;
+  display: inline-block;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.annotation-symbol {
+  color: #e74c3c;
+}
