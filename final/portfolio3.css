@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+
+.navbar .menu {
+  font-family: 'Raleway', sans-serif;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+              "logo-text menu-icon"
+              "nav-menu nav-menu";
+  margin-bottom: 2.5rem;
+}
+
+.logo-text h1 {
+  font-weight: 700;
+  color: white;
+}
+
+.menu-icon h1 {
+  font-weight: 400;
+  text-align: right;
+  color:white;
+}
+
+.menu-icon i {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+}
+
+.menu-icon i.rotateUp {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+}
+
+.menu-icon i:hover {
+  color: rgb(107, 107, 107);
+  cursor: pointer;
+}
+
+.navbar .menu ul.nav-menu {
+  display: none;
+  text-align: right;
+  grid-area: nav-menu;
+  animation: fadeIn 1s;
+}
+
+.navbar .menu ul.nav-menu.toggle-menu {
+  display: block;
+}
+
+.navbar .menu ul.nav-menu li {
+  list-style: none;
+  display: block;
+}
+
+.navbar .menu ul.nav-menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: rgb(37, 37, 37);
+  font-weight: 200;
+}
+
+.navbar .menu ul.nav-menu li a:hover {
+  color: white;
+}
+
+
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8"
+            "item9"
+            "item10";
+}
+
+.grid-container .item {
+  height: 300px;
+}
+
+.grid-container .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.footer {
+  height: 3rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(136, 136, 136, 0.42);
+}
+
+.footer p {
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+}
+
+.footer .heart-red {
+  color: red;
+}
+
+.footer span.author {
+  font-weight: 700;
+}
+
+
+
+.navbar .menu .logo-text {
+  width: 100%;
+  grid-area: logo-text;
+}
+
+.navbar .menu .menu-icon {
+  width: 100%;
+  grid-area: menu-icon;
+}
+
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
+}
+.item7 {
+  grid-area: item7;
+}
+.item8 {
+  grid-area: item8;
+}
+.item9 {
+  grid-area: item9;
+}
+.item10 {
+  grid-area: item10;
+}
+
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+
+@media only screen and (min-width: 700px) {
+  .navbar .menu {
+    grid-template-areas:
+                "logo-text nav-menu";
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .navbar .menu ul.nav-menu {
+    display: block;
+    text-align: right;
+    padding: 0.5rem 0;
+  }
+
+  .navbar .menu ul.nav-menu li {
+    display: inline;
+  }
+
+  .grid-container {
+    grid-template-areas:
+              "item1 item2"
+              "item3 item3"
+              "item4 item5"
+              "item6 item5"
+              "item7 item7"
+              "item7 item7"
+              "item8 item9"
+              "item10 item10";
+  }
+
+  .grid-container .item5 {
+    height: auto;
+  }
+
+  .grid-container .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    transition: filter 1s;
+    -webkit-transition: filter 1s;
+    -moz-transition: filter 1s;
+  }
+
+  .grid-container .item img:hover {
+    filter: none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+  }
+}
