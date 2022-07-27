@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
         addTextToResults("Server Linux | Cloud Computing | Networking | Web Development | Java | Python | Microsoft Office | Fluent in French | Adobe Photoshop Sony Vegas");
         break;
 
-      case "intershipinfo":
+      case "internshipinfo":
         clearInput();
         addTextToResults("	Building a Cardano stake pool to help raise funds. 	Monitoring and Maintaining servers and also the stake pool Network so it can stay fully operational. 	Building a website for the stake pool and hosting it on our server .	Maintaining the web servers to make sure the site is up. 	Helping newer interns join the company smoothly .	Used AWS and various other cloud server hosting services");
         break;
